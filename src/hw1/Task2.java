@@ -3,8 +3,8 @@ package hw1;
 
 public class Task2 {
     public static void main(String[] args) {
-        long count = 73_567L;
+        long count = 73_567L, num = count * count * count;
             System.out.println("Число в кубе:");
-            System.out.println(count * count * count);
+            System.out.println(num);
     }
 }

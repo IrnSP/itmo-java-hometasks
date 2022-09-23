@@ -4,8 +4,7 @@ package hw1;
 public class Task1 {
     public static void main(String[] args) {
         // length = a, width = b, high = c, s = square;
-            double a = 123.4, b = 24.8, c = 45.9;
-            double s = 2 * (a * b + b * c + a* c);
+            double a = 123.4, b = 24.8, c = 45.9, s = 2 * (a * b + b * c + a * c);
                 System.out.println("Площадь поверхности параллелепипеда:");
                 System.out.println(s);
                 System.out.println("Формулировка задачи с точки зрения математики не точна. " +
