@@ -10,7 +10,7 @@ public class Task4 {
         int age = 100, exp = 6;
                 if(age>100) System.out.println("мы Вам перезвоним");
                 else if(exp<5) System.out.println("Вы подходите на должность стажера");
-                else if(exp>=5) System.out.println("Вы подходите на должность разработчика");
+                else if (exp>=5) System.out.println("Вы подходите на должность разработчика");
 
     }
 }
