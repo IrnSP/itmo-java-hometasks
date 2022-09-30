@@ -6,8 +6,7 @@ package hw1;
 public class Task3 {
     public static void main(String[] args) {
         // time= 2.4 час, distance = 17.8 км
-        double time1 = 2.4, time = time1 * 3600, distance1 = 17.8, distance = distance1 * 1000,speed = distance / time;
-        System.out.println("Скорость, м/с:");
-        System.out.println(speed);
+        double time = 2.4,  distance = 17.8, speed = (distance*1000)/(time*3600);
+        System.out.println("Скорость, м/с:" + speed);
     }
 }

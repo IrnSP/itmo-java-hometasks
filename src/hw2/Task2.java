@@ -8,29 +8,24 @@ public class Task2 {
         Если номер купона равен 7647 или 9011 или 6612 - вывести сумму с учетом скидки 10%
         В остальных случаях скидка не предусмотрена, вывесть полную стоимость покупки. */
 
-        int sum = 100, saleCode = 1234;
+        double sum = 100; int saleCode = 9011;
         switch (saleCode) {
             case 4525:
-                System.out.println(sum*0.7);
+                sum = sum*0.7;
                 break;
             case 6424:
-                System.out.println(sum*0.8);
-                break;
             case 7012:
-                System.out.println(sum*0.8);
+                sum=sum*0.8;
                 break;
             case 7647:
-                System.out.println(sum*0.9);
-                break;
             case 9011:
-                System.out.println(sum*0.9);
-                break;
             case 6612:
-                System.out.println(sum*0.9);
+                sum=sum*0.9;
                 break;
             default:
-                System.out.println(sum);
-        }
+                sum = sum;
 
+        }
+        System.out.println("К оплате:" + sum);
     }
 }
