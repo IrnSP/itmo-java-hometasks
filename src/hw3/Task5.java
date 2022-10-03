@@ -8,35 +8,26 @@ public class Task5 {
 // В зависимоти от ответа пользователя принимает решения
 // Вместо текстовых ответов ДА/НЕТ, используйте числа 0 - НЕТ и 1 - ДА
 
-        Scanner us = new Scanner(System.in);
-        System.out.println("Загадайте и впишите число в диапазоне от [2 до 100]");
-        int userCount = us.nextInt(); //пользователь вводит число
-
         Scanner an = new Scanner(System.in);
-        System.out.println("Ответ да = 1, ответ нет = 0");
-        int userAnswer = an.nextInt(); // ответы пользователя на вопросы системы
 
-        int a = 2, b = 98, compAnswer = a + (int)(Math.random()*b);//программа выбирает число из диапазона [2;100]
-                                                                    //compAnswer: ответы программы
+         int start = 2, end = 101, middle;
 
-        System.out.println("Число меньше 51?");
-        userAnswer = an.nextInt();
-         if(userAnswer == 1) {
-             int otr1 = 51; // otr1: конечная точка диапазона [2;51]
-             while(compAnswer != userCount && otr1 >= 2) {
-                 if(compAnswer == userAnswer) System.out.println("Программа угадала");
-                 else if(compAnswer <= (int)(otr1/2)) System.out.println(compAnswer = compAnswer/2);
-
-
-
-                 otr1 --;
-         }
+            while(true) {
+                middle = (start + end)/2;
+                System.out.println("число равно " + middle + "?");
+                int userAnswer = an.nextInt();
+                if(userAnswer == 1) {
+                    System.out.println("Программа угадала число!");
+                    break;
+                }
+                System.out.println("число больше " + middle + "?");
+                userAnswer = an.nextInt();
+                if(userAnswer == 1) start = middle;
+                else if(userAnswer == 0) end = middle;
+            }
 
 
 
-
-
-        }
 
 
 
